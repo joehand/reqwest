@@ -1949,6 +1949,11 @@ mod test {
                 }
 
                 #[test]
+                fn domain_number_works() {
+                    let _ = Proxy::http("https://id.0jjj.casa").unwrap();
+                }
+
+                #[test]
                 fn domain_port_works() {
                     let _ = Proxy::http("http://proxy.example.com:8080").unwrap();
                 }
